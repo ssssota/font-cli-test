@@ -3,8 +3,8 @@ use font_kit::handle::Handle;
 use font_kit::properties::Properties;
 use font_kit::source::SystemSource;
 
-pub fn search_font(name: String) {
-    let family_name = parse_name(&name[..]);
+pub fn search_font(name: &str) {
+    let family_name = parse_name(name);
     let properties = Properties::new();
     let result = SystemSource::new().select_best_match(&[family_name], &properties);
 
