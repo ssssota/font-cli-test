@@ -183,6 +183,7 @@ dependencies = [
  "core-text",
  "font-kit",
  "structopt",
+ "ttf-parser",
 ]
 
 [[package]]
@@ -497,6 +498,12 @@ checksum = "d326610f408c7a4eb6f51c37c330e496b08506c9457c9d34287ecc38809fb060"
 dependencies = [
  "unicode-width",
 ]
+
+[[package]]
+name = "ttf-parser"
+version = "0.12.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2fc71742ead70703a55d184f82087302f2f9ffa3793e64db46a78bf75dd723f4"
 
 [[package]]
 name = "ucd-trie"
